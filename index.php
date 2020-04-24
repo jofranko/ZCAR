@@ -19,9 +19,9 @@
   <!-- DATABASE -->
   <?php include('db.php') ?>
   <!-- MODAL LOGIN -->
-  <?php include("log.html") ?>
+  <?php include("user-signin.html") ?>
   <!-- MODAL SIGNIN -->
-  <?php include("log.html")?>  
+  <?php include("user-login.html")?>  
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-expand-sm navbar-light">
