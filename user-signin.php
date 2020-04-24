@@ -14,7 +14,7 @@ if(isset($_POST['user-sign'])){
     $card_expiry_date= $_POST['card-expiry-date'];
     $card_cvv= $_POST['card-cvv'];
     
-    $query= "INSERT INTO users(id,first-name,last-name,email,username,password,identification,card-name,card-number,card-expiry-date,card-cvv) VALUES (NULL,'$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
+    $query= "INSERT INTO users(first-name,last-name,email,username,password,identification,card-name,card-number,card-expiry-date,card-cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
     $result=mysqli_query($conn,$query);
     if (!$result){
         $repetido1= "SELECT * FROM users WHERE users.username='$username'";
