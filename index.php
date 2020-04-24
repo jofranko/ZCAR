@@ -17,11 +17,11 @@
 
 <body>
   <!-- DATABASE -->
-  <?php include('db.php') ?>
+  <?php include 'db.php' ?>
   <!-- MODAL LOGIN -->
-  <?php include("user-signin.html") ?>
+  <?php include "user-signin.html" ?>
   <!-- MODAL SIGNIN -->
-  <?php include("user-login.html")?>  
+  <?php include "user-login.html" ?>  
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-expand-sm navbar-light">
@@ -43,7 +43,7 @@
               </li>
             <?php } else{ ?>
               <li class="nav-item "> 
-                <a class="nav-link btn btn-outline-warning btn-sm" data-target="#modalSignin" href="#">Sign in</a>
+                <a class="nav-link btn btn-outline-warning btn-sm"  data-toggle="modal" data-target="#modalSignin" href="#">Sign in</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
