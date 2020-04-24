@@ -1,17 +1,12 @@
 <?php
+define('DB_HOST', 'b7ncxfxzwxonsblshjek-mysql.services.clever-cloud.com:3036');
+define('DB_USER', 'u40wkasg5lvdfpad');
+define('DB_PASSWORD', '3anD8tL91W2pJlMDVsTg');
+define('DB_NAME', 'b7ncxfxzwxonsblshjek');
 
-$db_host = "b7ncxfxzwxonsblshjek-mysql.services.clever-cloud.com";
-$db_user= "u40wkasg5lvdfpad";
-$db_password = "3anD8tL91W2pJlMDVsTg";
-$db_name= "b7ncxfxzwxonsblshjek";
-
-$conn = mysqli_connect($db_host,$db_user,$db_password,$db_name);
+$conn = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
 
 if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
-
-session_start();
-
 ?>
-<!-- HOST, USER, PASSWORD, DB_NAME -->
