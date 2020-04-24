@@ -3,18 +3,18 @@
 include('db.php');
 
 if(isset($_POST['user-sign'])){
-    $first_name= $_POST['first-name'];
-    $last_name= $_POST['last-name'];
+    $first_name= $_POST['first_name'];
+    $last_name= $_POST['last_name'];
     $email= $_POST['email'];
     $username= $_POST['username'];
     $password= $_POST['password'];
     $identification= $_POST['identification'];
-    $card_name= $_POST['card-name'];
+    $card_name= $_POST['card_name'];
     $card_number= $_POST['card-number'];
-    $card_expiry_date= $_POST['card-expiry-date'];
-    $card_cvv= $_POST['card-cvv'];
+    $card_expiry_date= $_POST['card_expiry_date'];
+    $card_cvv= $_POST['card_cvv'];
     
-    $query= "INSERT INTO users(first-name,last-name,email,username,password,identification,card-name,card-number,card-expiry-date,card-cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
+    $query= "INSERT INTO users(first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ($first_name,$last_name,$email,$username,$password,$identification,$card_name,$card_number,$card_expiry_date,$card_cvv)";
     $result=mysqli_query($conn,$query);
     if (!$result){
         $repetido1= "SELECT * FROM users WHERE users.username='$username'";
