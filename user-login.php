@@ -1,8 +1,8 @@
 <?php 
 
 include('db.php');
-
 session_start();
+
 if(isset($_POST['user-log'])){
     $username= mysql_real_escape_string($_POST['f_username']);
     $password= mysql_real_escape_string($_POST['f_password']);
