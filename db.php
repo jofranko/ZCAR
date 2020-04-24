@@ -4,9 +4,9 @@ session_start();
 
 $conn = mysqli_connect(
     'b7ncxfxzwxonsblshjek-mysql.services.clever-cloud.com',
-    'b7ncxfxzwxonsblshjek',
     'u40wkasg5lvdfpad',
-    '3anD8tL91W2pJlMDVsTg'
+    '3anD8tL91W2pJlMDVsTg',
+    'b7ncxfxzwxonsblshjek'
 );
 
 ?>
