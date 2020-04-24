@@ -34,23 +34,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <?php 
-            if (isset($_SESSION['logwell'])) {
+            <?php if (isset($_SESSION['logwell'])) { ?>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="#">Book</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="user-logout.html">Logout</a>
               </li>
-            } else{
+            <?php } else{ ?>
               <li class="nav-item "> 
                 <a class="nav-link btn btn-outline-warning btn-sm" data-target="#modalSignin" href="#">Sign in</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
               </li>
-            }
-            ?>
+	    <?php } ?>
             <li class="nav-item ">
               <a class="nav-link" href="#about">About</a>
             </li>
