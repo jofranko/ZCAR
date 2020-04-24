@@ -14,9 +14,8 @@ if(isset($_POST['user-log'])){
     if($result){
         $_SESSION['logwell']="Successful entry";
         $_SESSION['loguser']=$username;
-        header("Location: index.php");
     }
-    
+    header("Location: index.php");
 }
 
 ?>
