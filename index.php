@@ -17,7 +17,7 @@
 
 <body>
 	<!-- DATABASE -->
-	
+	<?php include('db.php') ?>
 	<!-- MODAL LOGIN -->
 	<?php include('modal-login.html') ?>
 	<!-- MODAL SIGNIN -->
