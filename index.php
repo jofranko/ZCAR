@@ -16,12 +16,12 @@
 </head>
 
 <body>
-  <!-- DATABASE -->
-  <?php include('db.php') ?>
-  <!-- MODAL LOGIN -->
-  <?php include('user-login.html') ?>
-  <!-- MODAL SIGNIN -->
-  <?php include('user-signin.html') ?>  
+	<!-- DATABASE -->
+	<?php include('db.php') ?>
+	<!-- MODAL LOGIN -->
+	<?php include('user-login.html') ?>
+	<!-- MODAL SIGNIN -->
+	<?php include('user-signin.html') ?>  
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-expand-sm navbar-light">
