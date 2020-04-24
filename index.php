@@ -17,11 +17,11 @@
 
 <body>
   <!-- DATABASE -->
-  <?php include 'db.php' ?>
+  <?php include('db.php') ?>
   <!-- MODAL LOGIN -->
-  <?php include "user-signin.html" ?>
+  <?php include('user-login.html') ?>
   <!-- MODAL SIGNIN -->
-  <?php include "user-login.html" ?>  
+  <?php include('user-signin.html') ?>  
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-expand-sm navbar-light">
