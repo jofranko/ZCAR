@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST', 'b7ncxfxzwxonsblshjek-mysql.services.clever-cloud.com:3036');
+define('DB_HOST', 'b7ncxfxzwxonsblshjek-mysql.services.clever-cloud.com:3306');
 define('DB_USER', 'u40wkasg5lvdfpad');
 define('DB_PASSWORD', '3anD8tL91W2pJlMDVsTg');
 define('DB_NAME', 'b7ncxfxzwxonsblshjek');
