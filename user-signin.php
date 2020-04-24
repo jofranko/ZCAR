@@ -14,12 +14,12 @@ if(isset($_POST['user-sign'])){
     $card_expiry_date= $_POST['card_expiry_date'];
     $card_cvv= $_POST['card_cvv'];
     
-    $query= "INSERT INTO users(first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ($first_name,$last_name,$email,$username,$password,$identification,$card_name,$card_number,$card_expiry_date,$card_cvv)";
+    $query= "INSERT INTO users(first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES (:first_name,:last_name,:email,:username,:password,:identification,:card_name,:card_number,:card_expiry_date,:card_cvv)";
     $result=mysqli_query($conn,$query);
     if (!$result){
-        $repetido1= "SELECT * FROM users WHERE users.username='$username'";
+        $repetido1= "SELECT * FROM users WHERE users.username=$username";
         $abr1=mysqli_query($conn,$repetido1);
-        $repetido2= "SELECT * FROM users WHERE users.email='$email'";
+        $repetido2= "SELECT * FROM users WHERE users.email=$email";
         $abr2=mysqli_query($conn,$repetido2);
         if($abr1){
             $_SESSION['user_rep'] = 'Current username is used';
