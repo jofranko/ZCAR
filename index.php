@@ -39,7 +39,7 @@
                 <a class="nav-link btn btn-outline-warning btn-sm" href="#">Book</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link btn btn-outline-warning btn-sm" href="user-logout.html">Logout</a>
+                <a class="nav-link btn btn-outline-warning btn-sm" href="user-logout.php">Logout</a>
               </li>
             <?php } else{ ?>
               <li class="nav-item "> 
