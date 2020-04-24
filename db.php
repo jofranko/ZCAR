@@ -11,7 +11,5 @@ if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
 
-session_start();
-
 ?>
 <!-- HOST, USER, PASSWORD, DB_NAME -->
