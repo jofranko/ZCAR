@@ -36,7 +36,7 @@
           <ul class="navbar-nav ml-auto">
             <?php if (isset($_SESSION['logwell'])) { ?>
               <li class="nav-item ">
-                <a class="nav-link btn btn-outline-warning btn-sm" href="#">Book</a>
+                <a class="nav-link btn btn-outline-warning btn-sm" href="book.php">Book</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="user-logout.php">Logout</a>
