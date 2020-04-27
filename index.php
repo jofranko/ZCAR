@@ -206,7 +206,7 @@
             <a href="#" class="text-warning">Ready to drive?</a>
               </h1>
               <p>The backseat isn’t an option where you’re headed. It’s time to start commuting, exploring, and running errands on your own time.</p>
-            <a href="/" class="btn btn-warning btn-lg text-white">Join now</a>
+            <a href="#" class="btn btn-warning btn-lg text-white">Join now</a>
         </div>
       </div>
     </section>
