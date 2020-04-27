@@ -35,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <?php if ($_SESSION['logwell']=='Successful entry') { ?>
+            <?php if($_SESSION['logwell']=='Successful entry') { ?>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="book.php">Book</a>
               </li>
@@ -49,7 +49,7 @@
               <li class="nav-item ">
                 <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
               </li>
-	    <?php } ?>
+            <?php } ?>
             <li class="nav-item ">
               <a class="nav-link" href="#about">About</a>
             </li>
