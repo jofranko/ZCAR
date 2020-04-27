@@ -36,10 +36,10 @@
       </div>
     </nav>
 
-    <h1>WORK IN PROGRESS!</h1>
-    <h2>WORK IN PROGRESS!</h2>
-    <h3>WORK IN PROGRESS!</h3>
-    <h3> <?php echo $_SESSION["loguser"]; ?> </h3>
+    <h1 class="text-center">WORK IN PROGRESS!</h1>
+    <h1 class="text-center">WORK IN PROGRESS!</h1>
+    <h1 class="text-center">WORK IN PROGRESS!</h1>
+    <h1 class="text-center">User: <?php echo $_SESSION["loguser"]; ?> </h1>
 
     <!-- FOOTER -->
     <footer>

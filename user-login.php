@@ -6,7 +6,7 @@ if(isset($_POST['user_log'])){
     $username= $_POST['f_l_username'];
     $password= md5(md5($_POST['f_l_password']));
 
-    $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $query = "SELECT * FROM users WHERE users.username='$username' AND users.password='$password'";
     $result = mysqli_query($conn,$query);
     if(!$result){
         $_SESSION['logfail']='Unsuccessful entry';
