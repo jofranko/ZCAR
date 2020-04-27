@@ -3,7 +3,7 @@
 include('db.php');
 session_start();
 
-if(isset($_POST['user-log'])){
+if(isset($_POST['user_log'])){
     $username= $_POST['f_username'];
     $password= $_POST['f_password'];
 

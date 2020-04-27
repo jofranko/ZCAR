@@ -2,7 +2,7 @@
 
 include('db.php');
 
-if(isset($_POST['user-sign'])){
+if(isset($_POST['user_sign'])){
     $first_name= $_POST['first_name'];
     $last_name= $_POST['last_name'];
     $email= $_POST['email'];
