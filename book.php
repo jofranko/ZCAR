@@ -40,7 +40,7 @@
     <h1 class="text-center">WORK IN PROGRESS!</h1>
     <h1 class="text-center">WORK IN PROGRESS!</h1>
     <h1 class="text-center">User: <?php echo $_SESSION["loguser"]; ?> </h1>
-    <h1 class="text-center">User: <?php echo htmlspecialchars($_POST['user_log']); ?> </h1>
+    <h1 class="text-center">User: <?php echo htmlspecialchars($_POST['f_l_password']); ?> </h1>
 
     <!-- FOOTER -->
     <footer>
