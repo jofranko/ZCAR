@@ -74,7 +74,6 @@
               </h1>
               <p>The freedom of cars on demand in hundreds of cities, ready to book by the hour or day.</p>
               <a href="#about" class="btn btn-warning btn-lg text-white">Read More</a>
-              <a href="join.html" class="btn btn-warning btn-lg text-white">Sign in</a>
             </div>
             <div class="col-sm-6">
               <img src="img/carro.png" class="img-fluid d-none d-sm-block">
@@ -207,9 +206,7 @@
             <a href="#" class="text-warning">Ready to drive?</a>
               </h1>
               <p>The backseat isn’t an option where you’re headed. It’s time to start commuting, exploring, and running errands on your own time.</p>
-            <a href="join.html" class="btn btn-warning btn-lg text-white">
-                  Join now
-            </a>
+            <a href="/" class="btn btn-warning btn-lg text-white">Join now</a>
         </div>
       </div>
     </section>
