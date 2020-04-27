@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- DATABASE -->
-<?php include('db.php') ?>
 
 <head>
 	<meta charset="UTF-8">
@@ -19,6 +17,8 @@
 
 <body>
 
+  <!-- DATABASE -->
+  <?php include('db.php') ?>
 	<!-- MODAL LOGIN -->
 	<?php include('modal-login.html') ?>
 	<!-- MODAL SIGNIN -->
