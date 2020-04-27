@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- DATABASE -->
+<?php include('db.php') ?>
 <head>
 	<meta charset="UTF-8">
 	<title>ZCAR</title>
