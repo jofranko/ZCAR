@@ -4,7 +4,7 @@ include('db.php');
 
 if(isset($_POST['user_log'])){
     $username= $_POST['f_l_username'];
-    $password= $_POST['f_l_password'];
+    $password= md5(md5($_POST['f_l_password']));
 
     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn,$query);
