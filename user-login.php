@@ -8,12 +8,12 @@ if(isset($_POST['user_log'])){
 
     $query = "SELECT * FROM users WHERE users.username='$username' AND users.password='$password'";
     $result = mysqli_query($conn,$query);
-    if(!$result){
+    if(!isset($result)){
         $_SESSION['logfail']='Unsuccessful entry';
     }
-    if($result){
+    if(isset($result)){
         $_SESSION['logwell']='Successful entry';
-        $_SESSION['loguser']=$result;
+        $_SESSION['loguser']=$username;
     }
     header("Location: index.php");
 }
