@@ -36,9 +36,7 @@
       </div>
     </nav>
 
-    
-
-    <section class="bg-white text-white">
+    <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
           <h1><a href="#" class="text-warning">Book</a></h1>
