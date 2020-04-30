@@ -39,12 +39,12 @@
     <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
-          <h1><a class="text-warning">Book</a></h1>
+          <h1><a class="text-warning">Book a car</a></h1>
           <p">Zipcar membership costs $7 a month or $70 a year. Reserve cars by the hour or by the day. Gas, insurance, and 180 miles per day are all included in membership.</p>
           <h3>User: <?php echo $_SESSION["loguser"]; ?> </h3>
           <form action="" method="POST">
             <label>Time:</label><br>
-            <label><input type="radio" class="form-control" name="s_membership" value="hours">Hours</label><br>
+            <label><input type="radio" class="form-control" name="s_membership" value="hours">Hours</label>
             <label><input type="radio" class="form-control" name="s_membership" value="days">Days</label><br>
             <input type="text" class="form-control col-4"  name="b_quantity" placeholder="Quantity"><br>
             <input type="submit" class="btn btn-warning btn-sm text-white" name="book" value="Book">
