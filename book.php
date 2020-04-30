@@ -46,8 +46,7 @@
             <label>Time:</label><br>
             <label><input type="radio" class="form-control" name="s_membership" value="hours">Hours</label>
             <label><input type="radio" class="form-control" name="s_membership" value="days">Days</label><br>
-            <div class="col-xs-3">
-            <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br></div>
+            <input type="text" class="form-control text-center"  name="b_quantity" placeholder="Quantity"><br>
             <input type="submit" class="btn btn-warning btn-sm text-white" name="book" value="Book">
           </form>
         </div>
