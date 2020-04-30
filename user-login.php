@@ -13,7 +13,7 @@ if(isset($_POST['user_log'])){
     }
     if(isset($result)){
         $_SESSION['logwell']='Successful entry';
-        $_SESSION['loguser']=$username;
+        $_SESSION['loguser']=$result;
     }
     header("Location: index.php");
 }
