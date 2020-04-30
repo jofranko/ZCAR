@@ -39,7 +39,7 @@
     
 
     <section class="bg-white text-white">
-      <div class="main-header call-to-action section">
+      <div class="section">
         <div class="text-center justify-content-center align-self-center">
           <h1><a href="#" class="text-warning">Book</a></h1>
           <p class="text-left">Zipcar membership costs $7 a month or $70 a year. Reserve cars by the hour or by the day. Gas, insurance, and 180 miles per day are all included in membership.</p>
