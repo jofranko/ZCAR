@@ -3,15 +3,15 @@
 include('db.php');
 
 if(isset($_POST['user_sign'])){
-    $first_name= $_POST['first_name'];
-    $last_name= $_POST['last_name'];
-    $email= $_POST['email'];
-    $username= $_POST['username'];
-    $password= $_POST['password'];
-    $identification= $_POST['identification'];
-    $card_name= $_POST['card_name'];
-    $card_number= $_POST['card-number'];
-    $card_expiry_date= $_POST['card_expiry_date'];
+    $first_name= $_POST['s_first_name'];
+    $last_name= $_POST['s_last_name'];
+    $email= $_POST['s_email'];
+    $username= $_POST['s_username'];
+    $password= $_POST['s_password'];
+    $identification= $_POST['s_identification'];
+    $card_name= $_POST['s_card_name'];
+    $card_number= $_POST['s_card_number'];
+    $card_expiry_date= $_POST['s_card_expiry_date'];
     $card_cvv= $_POST['card_cvv'];
     
     $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";

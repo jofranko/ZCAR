@@ -6,9 +6,9 @@ if(isset($_POST['user_log'])){
     $username= $_POST['l_username'];
     $password= $_POST['l_password'];
 
-    $query = "SELECT * FROM users WHERE users.username='$username' AND users.password='$password'";
+    $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn,$query);
-    if(isset($result)){
+    if($result){
         $_SESSION['logwell']=true;
         $_SESSION['loguser']=$result;
     } else{
