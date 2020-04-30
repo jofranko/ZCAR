@@ -1,8 +1,8 @@
 <?php 
-
+require_once('db.php');
 if(isset($_POST['user_log'])){
 
-    require_once('db.php');
+    
     $username= $_POST['l_username'];
     $password= $_POST['l_password'];
 
