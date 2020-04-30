@@ -36,10 +36,24 @@
       </div>
     </nav>
 
-    <h1 class="text-center">WORK IN PROGRESS!</h1>
-    <h1 class="text-center">WORK IN PROGRESS!</h1>
-    <h1 class="text-center">WORK IN PROGRESS!</h1>
-    <h1 class="text-center">User: <?php echo $_SESSION["loguser"]; ?> </h1>
+    
+
+    <section class="bg-white text-white">
+      <div class="main-header call-to-action section">
+        <div class="text-center justify-content-center align-self-center">
+          <h1><a href="#" class="text-warning">Book</a></h1>
+          <p class="text-left">Zipcar membership costs $7 a month or $70 a year. Reserve cars by the hour or by the day. Gas, insurance, and 180 miles per day are all included in membership.</p>
+          <h3 class="text-left">User: <?php echo $_SESSION["loguser"]; ?> </h3>
+          <form action="" method="POST">
+            <p class="text-black text-left">Time:</p><br>
+            <input type="radio" class="form-control" name="s_membership" value="monthly"><p class="text-black">Hours</p>
+            <input type="radio" class="form-control" name="s_membership" value="anual"><p class="text-black">Days</p><br>
+            <input type="text" class="form-control" name="b_quantity" placeholder="Quantity"><br>
+            <input type="submit" class="btn btn-warning btn-sm text-white" name="book" value="Book">
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>

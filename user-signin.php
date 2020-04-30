@@ -9,6 +9,7 @@ if(isset($_POST['user_sign'])){
     $username= $_POST['s_username'];
     $password= $_POST['s_password'];
     $identification= $_POST['s_identification'];
+    $membership= $_POST['s_membership'];
     $card_name= $_POST['s_card_name'];
     $card_number= $_POST['s_card_number'];
     $card_expiry_date= $_POST['s_card_expiry_date'];
