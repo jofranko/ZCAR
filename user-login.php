@@ -1,21 +1,22 @@
 <?php 
 
-include('db.php');
+if(!empty($_POST['user_log'])){
 
-if(isset($_POST['user_log'])){
-    $username= $_POST['f_l_username'];
-    $password= $_POST['f_l_password'];
+    require_once('db.php');
+    $username= $_POST['l_username'];
+    $password= $_POST['l_password'];
 
-    $query = "SELECT * FROM users WHERE users.username='$username' AND users.password='$password'";
-    $result = mysqli_query($conn,$query);
-    if(!$result){
-        $_SESSION['logfail']='Unsuccessful entry';
-    }
-    if($result){
-        $_SESSION['logwell']='Successful entry';
+    $query = mysqli_query($conn,"SELECT * FROM users WHERE users.username='$username' AND users.password='$password'");
+    $result = mysqli_num_rows($query);
+    if($result>0){
+        session_start();
+        $_SESSION['logwell']=true;
         $_SESSION['loguser']=$username;
+        header("Location: book.php");
+    }else{
+        $alert = "Wrong username or password"
+        header("Location: index.php");
     }
-    header("Location: index.php");
 }
 
 ?>
