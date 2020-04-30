@@ -10,11 +10,11 @@ if(isset($_POST['user_log'])){
     $result = mysqli_query($conn,$query);
     if($result==true){
         $_SESSION['logwell']=true;
-        $_SESSION['loguser']=$result;
+        $_SESSION['loguser']=$username;
     } else{
         $_SESSION['logwell']=false;
     }
-    header("Location: index.php");
+    header("Location: book.php");
 }
 
 ?>
