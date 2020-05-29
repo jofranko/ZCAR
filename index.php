@@ -14,15 +14,9 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="icon" href="img/logo.ico">
 </head>
-
+<!-- DATABASE -->
+<?php include('db.php') ?>
 <body>
-
-  <!-- DATABASE -->
-  <?php include('db.php') ?>
-	<!-- MODAL LOGIN -->
-	<?php include('modal-login.html') ?>
-	<!-- MODAL SIGNIN -->
-	<?php include('modal-signin.html') ?>  
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-expand-sm navbar-light">
@@ -63,7 +57,64 @@
         </div>
       </div>
     </nav>
-    
+
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center justify-content-center align-self-center">
+              <form action="user-login.php" method="POST">
+                <input type="text" class="form-control" name="l_username" placeholder="Username"><br>
+                <input type="password" class="form-control" name="l_password" placeholder="Password"><br>
+                <input type="submit" class="btn btn-warning btn-sm text-white" name="user_log" value="Login">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL SIGNIN -->
+    <div class="modal fade" id="modalSignin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Sign in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center justify-content-center align-self-center">
+              <form action="user-signin.php" method="POST">
+                <input type="text" class="form-control" name="s_first_name" placeholder="First name"><br>
+                <input type="text" class="form-control" name="s_last_name" placeholder="Last name"><br>
+                <input type="text" class="form-control" name="s_email" placeholder="Email"><br>
+                <input type="text" class="form-control" name="s_username" placeholder="Username"><br>
+                <input type="password" class="form-control" name="s_password" placeholder="Password"><br>
+                <input type="text" class="form-control" name="s_identification" placeholder="Identification"><br>
+                <label>Membership:</label><br>
+                <label><input type="radio" class="form-control" name="s_membership" value="monthly">Monthly</label><br>
+                <label><input type="radio" class="form-control" name="s_membership" value="anual">Anual</label><br>
+                <input type="text" class="form-control" name="s_card_name" placeholder="Card name">
+                <input type="text" class="form-control" name="s_card_number" placeholder="Card number">
+                <input type="text" class="form-control" name="s_card_expiry_date" placeholder="Card expiry date">
+                <input type="text" class="form-control" name="s_card_cvv" placeholder="Card CVV"><br>
+                <input type="submit" class="btn btn-warning btn-sm text-white" name="user_sign" value="Sign in">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- HEADER -->
     <header class="main-header call-to-action section">
       <div class="text-white">
