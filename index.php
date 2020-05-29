@@ -100,9 +100,6 @@
                 <input type="text" class="form-control" name="s_username" placeholder="Username"><br>
                 <input type="password" class="form-control" name="s_password" placeholder="Password"><br>
                 <input type="text" class="form-control" name="s_identification" placeholder="Identification"><br>
-                <label>Membership:</label><br>
-                <label><input type="radio" class="form-control" name="s_membership" value="monthly">Monthly</label><br>
-                <label><input type="radio" class="form-control" name="s_membership" value="anual">Anual</label><br>
                 <input type="text" class="form-control" name="s_card_name" placeholder="Card name">
                 <input type="text" class="form-control" name="s_card_number" placeholder="Card number">
                 <input type="text" class="form-control" name="s_card_expiry_date" placeholder="Card expiry date">
@@ -241,7 +238,7 @@
                <div class="card-body">
                  <h3>How much does Zipcar cost?</h3>
                  <p>
-                   Zipcar membership costs $7 a month or $70 a year. Reserve cars by the hour or by the day. Gas, insurance, and 180 miles per day are all included in membership.
+                   In Zipcar you can reserve cars with a costs of $5 per hour or $100 per day. Gas, insurance, and 180 miles per day are all included in membership.
                  </p>
                </div>
              </div>

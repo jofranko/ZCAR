@@ -52,11 +52,10 @@
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
                                     echo "<tr>";
-                                        echo "<th>#</th>";
                                         echo "<th>first name</th>";
                                         echo "<th>last name</th>";
                                         echo "<th>username</th>";
-                                        echo "<th>merbership</th>";
+                                        echo "<th>email</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -65,7 +64,7 @@
                                         echo "<td>" . $row['first_name'] . "</td>";
                                         echo "<td>" . $row['last_name'] . "</td>";
                                         echo "<td>" . $row['username'] . "</td>";
-                                        echo "<td>" . $row['merbership'] . "</td>";
+                                        echo "<td>" . $row['email'] . "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            
