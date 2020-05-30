@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- DATABASE -->
-<?php include('db.php') ?>
+<?php 
+include('db.php') 
+if(isset($_POST['c_c_b_']) && !empty($_POST['c_c_b_user']) && !empty($_POST['c_c_b_date']) && !empty($_POST['c_c_b_time']) && !empty($_POST['c_c_b_quantity'])){
+    $bookdate = $_POST['c_c_b_user'];
+    $username = $_POST['c_c_b_date'];
+    $booktime = $_POST['c_c_b_time'];
+    $quantity = $_POST['c_c_b_quantity'];
+    if ($booktime == 'Hours') {
+        $total=$quantity*5;
+    }elseif ($booktime == 'Days') {
+        $total = $quantity*100;
+    }
+    $query = "INSERT INTO book (id,bookdate,username,booktime,quantity,total) VALUES (NULL,'$bookdate','$username','$booktime','$quantity','$total')";
+    $result = mysqli_query($conn,$query);
+    header("Location: crud.php");
+}else{
+    header("Location: control-error.php");
+}
+?>
 <head>
 	<meta charset="UTF-8">
 	<title>ZCAR</title>
@@ -39,33 +57,21 @@
     <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
-          <h1><a class="text-warning">CRUD</a></h1>
+          <h1><a class="text-black">Book a car</a></h1>
           <div class=row>
-            <div class=col-3>
-              <h1><a class="text-black">Create</a></h1>
-
-            </div>
-            <div class=col-3>
-              <h1><a class="text-black">Read</a></h1>
-              <a href="crud-book.php" class="btn btn-warning btn-lg text-white">Book</a><br><br>
-              <a href="crud-users.php" class="btn btn-warning btn-lg text-white">Users</a>
-            </div>
-            <div class=col-3>
-              <h1><a class="text-black">Update</a></h1>
-
-            </div>
-            <div class=col-3>
-              <h1><a class="text-black">Delete</a></h1>
-              <form action="crud-element-delete.php" method="POST">
+            <div class=col-md-4></div>
+            <div class=col-md-4>
+              <form action="" method="POST">
+                <input type="text" class="form-control"  name="c_c_b_user" placeholder="User"><br>
+                <input type="text" class="form-control"  name="c_c_b_date" placeholder="Date (dd-mm-yyyy)"><br>
                 <div class="form-group">
-                  <select class="form-control" name="c_d_table" id="exampleFormControlSelect">
-                    <option>Table...</option>
-                    <option>book</option>
-                    <option>users</option>
+                  <select class="form-control" name="c_c_b_time" id="exampleFormControlSelect">
+                    <option>Hours</option>
+                    <option>Days</option>
                   </select>
                 </div>
-                <input type="text" class="form-control"  name="c_d_id" placeholder="Id"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_d" value="Delete">
+                <input type="text" class="form-control"  name="c_c_b_quantity" placeholder="Quantity"><br>
+                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_b" value="Book">
               </form>
             </div>
           </div>
@@ -83,6 +89,7 @@
         </div>
       </div>       
     </footer>
+    <?php
 
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -90,3 +97,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
+
