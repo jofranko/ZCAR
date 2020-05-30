@@ -40,28 +40,26 @@
           <p>
             Do you have any questions about our service?
           </p>
-          <form action="">
+          <form action="contact-email.php" method="POST">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <i class="fas fa-user input-group-text"></i>
               </div>
-              <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" name="c_name" placeholder="Name">
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <i class="fas fa-envelope input-group-text"></i>
               </div>
-              <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" name="c_email" placeholder="example@example.com">
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <i class="fas fa-pencil-alt input-group-text"></i>
               </div>
-              <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+              <textarea class="form-control" cols="30" rows="10" name="c_message" placeholder="Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-warning btn-lg text-white ">
-              Send
-            </button>
+            <input type="submit" class="btn btn-warning btn-sm text-white" name="email" value="Send">
           </form>
       </div>
     </header>
