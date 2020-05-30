@@ -54,7 +54,7 @@
               <h1><a class="text-warning">Update</a></h1>
 
             </div>
-              <h1><a class="text-warning">Delete</a></h1>
+              <h1><a class="text-warning">Delete</a></h1><br>
             <div class=col>
               <form action="crud-element-delete.php" method="POST">
                 <div class="form-group">
