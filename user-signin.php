@@ -19,10 +19,12 @@ if(isset($_POST['user_sign'])){
     $test2 = "SELECT * FROM users WHERE email='$email'";
     $test_result2 = mysqli_query($conn,$test2);
     if(mysqli_num_rows($test_result) > 0){
-        $_SESSION["control"]='Current USERNAME is already used';
+        $used_username='Current USERNAME is already used'
+        $_SESSION["control"]=$used_username;
         header("Location: control.php");
     } elseif (mysqli_num_rows($test_result2) > 0) {
-        $_SESSION["control"]='Current EMAIL is already used';
+        $used_email='Current EMAIL is already used'
+        $_SESSION["control"]=$used_email;
         header("Location: control.php");
     }else{
         $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
