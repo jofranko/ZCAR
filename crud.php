@@ -90,6 +90,7 @@
                       </select>
                     </div>
                   </div>
+                </div>
                 <input type="text" class="form-control"  name="c_u_data" placeholder="Data"><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="c_u" value="Update">
               </form>
