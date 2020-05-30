@@ -14,6 +14,5 @@ if(isset($_POST['user_log'])){
     }else{
     	header("Location: control/control-login.php");
     }
-    header("Location: index.php");
 }
 ?>

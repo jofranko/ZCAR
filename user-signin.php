@@ -12,7 +12,7 @@ if(isset($_POST['user_sign'])){
     $card_name= $_POST['s_card_name'];
     $card_number= $_POST['s_card_number'];
     $card_expiry_date= $_POST['s_card_expiry_date'];
-    $card_cvv= $_POST['card_cvv'];
+    $card_cvv= $_POST['s_card_cvv'];
     
     $test = "SELECT * FROM users WHERE username='$username'";
     $test_result = mysqli_query($conn,$test);
