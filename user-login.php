@@ -11,6 +11,7 @@ if(isset($_POST['user_log'])){
     if(mysqli_num_rows($result) > 0){
         $_SESSION['logwell']=true;
         $_SESSION['loguser']=$username;
+        header("Location: index.php");
     }else{
     	header("Location: control-login.php");
     }
