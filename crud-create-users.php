@@ -54,7 +54,7 @@
                 <input type="text" class="form-control" name="s_card_number" placeholder="Card number">
                 <input type="text" class="form-control" name="s_card_expiry_date" placeholder="Card expiry date">
                 <input type="text" class="form-control" name="s_card_cvv" placeholder="Card CVV"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="user_sign" value="Sign in">
+                <input type="submit" class="btn btn-warning btn-lg text-white" name="user_sign" value="Create">
               </form>
             </div>
           </div>
