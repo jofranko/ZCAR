@@ -34,8 +34,6 @@
       </div>
     </nav>
     <!-- CRUD -->
-    <?php $admin = $_SESSION['loguser']; 
-    if($admin =='admin') { ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -48,6 +46,8 @@
                     require_once "db.php";
                     // Attempt select query execution
                     $sql = "SELECT * FROM book";
+                    $admin = $_SESSION['loguser']; 
+                    if($admin =='admin') { 
                     if($result = mysqli_query($conn, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo "<table class='table table-bordered table-striped'>";
@@ -79,7 +79,7 @@
                         }
                     } else{
                         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-                    }
+                    }}
                     // Close connection
                     mysqli_close($conn);
                     ?>
