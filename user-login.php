@@ -12,7 +12,6 @@ if(isset($_POST['user_log'])){
         $_SESSION['logwell']=true;
         $_SESSION['loguser']=$username;
     }
-    header("Location: index.php");    
+    header("Location: index.php");
 }
-
 ?>
