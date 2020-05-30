@@ -12,7 +12,7 @@ if(isset($_POST['booking']) && !empty($_POST['b_time']) && !empty($_POST['b_quan
     }elseif ($booktime=='Days' || $booktime=='days') {
         $total=$quantity*100;
     }else{
-        $booktime='Hours'
+        $booktime='Hours';
         $total=$quantity*5;
     }
     $query = "INSERT INTO book (bookdate,username,booktime,quantity,total) VALUES ('$bookdate','$username','$booktime','$quantity','$total')";
