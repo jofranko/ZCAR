@@ -14,7 +14,7 @@ if(isset($_POST['booking'])){
         $total=$quantity*100;
     }
     $query = "INSERT INTO book (bookdate,username,booktime,quantity) VALUES ('$bookdate','$username','$booktime','$quantity')";
-    $result = mysqli_query($conn,$query);
+    mysqli_query($conn,$query);
     header("Location: index.php");
 }
 ?>
