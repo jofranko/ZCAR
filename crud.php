@@ -41,7 +41,7 @@
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">CRUD</a></h1>
           <div class=row>
-            <div class=col-6>
+            <div class=col-sm-6>
               <!-- CREATE -->
               <h1><a class="text-black">Create</a></h1>
               <!-- create book -->
@@ -60,37 +60,42 @@
                   </select>
                 </div>
                 <input type="text" class="form-control"  name="c_u_id" placeholder="Id"><br>
-                <div class="form-group">
-                  <select class="form-control" name="c_u_column_book" id="exampleFormControlSelect3">
-                    <option>Table...</option>
-                    <option>bookdate</option>
-                    <option>username</option>
-                    <option>booktime</option>
-                    <option>quantity</option>
-                    <option>total</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <select class="form-control" name="c_u_column_users" id="exampleFormControlSelect3">
-                    <option>Table...</option>
-                    <option>first_name</option>
-                    <option>last_name</option>
-                    <option>email</option>
-                    <option>username</option>
-                    <option>password</option>
-                    <option>identification</option>
-                    <option>card_name</option>
-                    <option>card_number</option>
-                    <option>card_expiry_date</option>
-                    <option>card_cvv</option>
-                  </select>
-                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                      <select class="form-control" name="c_u_column_book" id="exampleFormControlSelect1">
+                        <option>Book column...</option>
+                        <option>bookdate</option>
+                        <option>username</option>
+                        <option>booktime</option>
+                        <option>quantity</option>
+                        <option>total</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                      <select class="form-control" name="c_u_column_users" id="exampleFormControlSelect2">
+                        <option>Users column...</option>
+                        <option>first_name</option>
+                        <option>last_name</option>
+                        <option>email</option>
+                        <option>username</option>
+                        <option>password</option>
+                        <option>identification</option>
+                        <option>card_name</option>
+                        <option>card_number</option>
+                        <option>card_expiry_date</option>
+                        <option>card_cvv</option>
+                      </select>
+                    </div>
+                  </div>
                 <input type="text" class="form-control"  name="c_u_data" placeholder="Data"><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="c_u" value="Update">
               </form>
             </div>
             
-            <div class=col-6>
+            <div class=col-sm-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
               <!-- read book -->

@@ -2,30 +2,30 @@
 
 include('db.php');
 
-if(isset($_POST['c_u']) && !empty($_POST['c_u_id'])){
+if(isset($_POST['c_u']) && !empty($_POST['c_u_id']) && !empty($_POST['c_u_data'])){
     $table = $_POST['c_u_table'];
     $id = $_POST['c_u_id'];
     $column_book = $_POST['c_u_column_book'];
     $column_users = $_POST['c_u_column_users'];
     $data = $_POST['c_u_data'];
     if ($table == 'book') {
-        if ($column_users == 'date') {
+        if ($column_book == 'date') {
             $query = "UPDATE book SET bookdate = '$data' WHERE id = '$id'";      
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
-        }elseif ($column_users == 'username') {
+        }elseif ($column_book == 'username') {
             $query = "UPDATE book SET username = '$data' WHERE id = '$id'";       
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
-        }elseif ($column_users == 'booktime') {
+        }elseif ($column_book == 'booktime') {
             $query = "UPDATE book SET booktime = '$data' WHERE id = '$id'";     
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
-        }elseif ($column_users == 'quantity') {
+        }elseif ($column_book == 'quantity') {
             $query = "UPDATE book SET quantity = '$data' WHERE id = '$id'";        
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
-        }elseif ($column_users == 'total') {
+        }elseif ($column_book == 'total') {
             $query = "UPDATE book SET total = '$data' WHERE id = '$id'";        
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
