@@ -29,7 +29,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <?php if($_SESSION['loguser']=='admin') { ?>
+            <?php $admin = $_SESSION['loguser'];
+              if($admin =='admin') { ?>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="crud-book.php">CRUD BOOK</a>
               </li>
