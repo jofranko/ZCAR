@@ -41,21 +41,21 @@
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">CRUD</a></h1>
           <div class=row>
-            <div class=col>
+            <div class=col-3>
               <h1><a class="text-warning">Create</a></h1>
 
             </div>
-            <div class=col>
+            <div class=col-3>
               <h1><a class="text-warning">Read</a></h1>
               <a href="crud-book.php" class="btn btn-warning btn-lg text-white">Book</a><br><br>
               <a href="crud-users.php" class="btn btn-warning btn-lg text-white">Users</a>
             </div>
-            <div class=col>
+            <div class=col-3>
               <h1><a class="text-warning">Update</a></h1>
 
             </div>
-              <h1><a class="text-warning">Delete</a></h1><br>
-            <div class=col>
+              <h1><a class="text-warning">Delete</a></h1>
+            <div class=col-3>
               <form action="crud-element-delete.php" method="POST">
                 <div class="form-group">
                   <select class="form-control" name="c_d_table" id="exampleFormControlSelect">
