@@ -40,7 +40,7 @@
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">Book a car</a></h1>
-          <p">Zipcar membership costs $7 a month or $70 a year. Reserve cars by the hour or by the day. Gas, insurance, and 180 miles per day are all included in membership.</p>
+          <p>In Zipcar you can reserve cars with a costs of $5 per hour or $100 per day. Gas, insurance, and 180 miles per day are all included in membership.</p>
           <h3>User: <?php echo $_SESSION["loguser"]; ?> </h3>
           <form action="" method="POST">
             <input type="text" class="form-control text-center"  name="b_time" placeholder="Hours or Days"><br>

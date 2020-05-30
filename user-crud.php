@@ -52,10 +52,12 @@
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
                                     echo "<tr>";
-                                        echo "<th>first name</th>";
-                                        echo "<th>last name</th>";
-                                        echo "<th>username</th>";
-                                        echo "<th>email</th>";
+                                        echo "<th>First name</th>";
+                                        echo "<th>Last name</th>";                    
+                                        echo "<th>Email</th>";
+                                        echo "<th>Username</th>";
+                                        echo "<th>Identification</th>";
+                                        echo "<th>Card name</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -63,8 +65,10 @@
                                     echo "<tr>";
                                         echo "<td>" . $row['first_name'] . "</td>";
                                         echo "<td>" . $row['last_name'] . "</td>";
-                                        echo "<td>" . $row['username'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";
+                                        echo "<td>" . $row['username'] . "</td>";
+                                        echo "<td>" . $row['identification'] . "</td>";
+                                        echo "<td>" . $row['card_name'] . "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            
