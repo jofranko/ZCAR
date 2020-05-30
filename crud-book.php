@@ -44,9 +44,8 @@
                     <?php
                     // Include config file
                     require_once "db.php";
-                    
                     // Attempt select query execution
-                    $sql = "SELECT * FROM book";
+                    $sql = "SELECT * FROM book";                    
                     if($result = mysqli_query($conn, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo "<table class='table table-bordered table-striped'>";
@@ -79,7 +78,7 @@
                     } else{
                         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
                     }
- 
+                    
                     // Close connection
                     mysqli_close($conn);
                     ?>
@@ -87,7 +86,7 @@
             </div>        
         </div>
     </div>
-
+    <?php } ?>
 	<!-- FOOTER -->
     <footer>
       <div class="container p-3">
