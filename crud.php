@@ -41,49 +41,28 @@
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">CRUD</a></h1>
           <div class=row>
-            <!-- CREATE -->
-            <div class=col-4>
+            <div class=col-6>
+              <!-- CREATE -->
               <h1><a class="text-black">Create</a></h1>
               <!-- create book -->
-              <h3><a class="text-black">Create book</a></h3>
-              <form action="crud-create-book.php" method="POST">
-                <input type="text" class="form-control"  name="c_c_b_user" placeholder="User"><br>
-                <input type="text" class="form-control"  name="c_c_b_date" placeholder="Date (dd-mm-yyyy)"><br>
-                <div class="form-group">
-                  <select class="form-control" name="c_c_b_time" id="exampleFormControlSelect">
-                    <option>Hours</option>
-                    <option>Days</option>
-                  </select>
-                </div>
-                <input type="text" class="form-control"  name="c_c_b_quantity" placeholder="Quantity"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_b" value="Create book"><br>
-              </form>
+              <a href="crud-create-book.php" class="btn btn-warning btn-lg text-white">Book</a>
               <!-- create users -->
-              <h3><a class="text-black">Create users</a></h3>
-              <form action="crud-create-users.php" method="POST">
-                <input type="text" class="form-control" name="c_c_u_first_name" placeholder="First name"><br>
-                <input type="text" class="form-control" name="c_c_u_last_name" placeholder="Last name"><br>
-                <input type="text" class="form-control" name="c_c_u_email" placeholder="Email"><br>
-                <input type="text" class="form-control" name="c_c_u_username" placeholder="Username"><br>
-                <input type="password" class="form-control" name="c_c_u_password" placeholder="Password"><br>
-                <input type="text" class="form-control" name="c_c_u_identification" placeholder="Identification"><br>
-                <input type="text" class="form-control" name="c_c_u_card_name" placeholder="Card name">
-                <input type="text" class="form-control" name="c_c_u_card_number" placeholder="Card number">
-                <input type="text" class="form-control" name="c_c_u_card_expiry_date" placeholder="Card expiry date">
-                <input type="text" class="form-control" name="c_c_u_card_cvv" placeholder="Card CVV"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_u" value="Create users">
-              </form>
-            </div>
-            <!-- UPDATE -->
-            <div class=col-4>
+              <a href="crud-create-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br>              
+
+              <!-- UPDATE -->
               <h1><a class="text-black">Update</a></h1>
+              <!-- update book -->
+
+              <!-- update users -->
+
             </div>
-            <!-- READ & DELETE -->
-            <div class=col-4>
+            <div class=col-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
-              <a href="crud-book.php" class="btn btn-warning btn-lg text-white">Book</a><br><br>
-              <a href="crud-users.php" class="btn btn-warning btn-lg text-white">Users</a><br>
+              <!-- read book -->
+              <a href="crud-read-book.php" class="btn btn-warning btn-lg text-white">Book</a>
+              <!-- read users -->
+              <a href="crud-read-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br>
               <!-- DELETE -->
               <h1><a class="text-black">Delete</a></h1>
               <form action="crud-delete.php" method="POST">
