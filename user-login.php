@@ -12,7 +12,7 @@ if(isset($_POST['user_log'])){
         $_SESSION['logwell']=true;
         $_SESSION['loguser']=$username;
     }else{
-    	header("Location: control/control-login.php");
+    	header("Location: control-login.php");
     }
 }
 ?>

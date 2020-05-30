@@ -19,13 +19,13 @@ if(isset($_POST['user_sign'])){
     $test2 = "SELECT * FROM users WHERE email='$email'";
     $test_result2 = mysqli_query($conn,$test2);
     if(mysqli_num_rows($test_result) > 0){
-        header("Location: control/control-username.php");
+        header("Location: control-username.php");
     } elseif (mysqli_num_rows($test_result2) > 0) {
-        header("Location: control/control-email.php");
+        header("Location: control-email.php");
     }else{
         $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
         $result = mysqli_query($conn,$query);
-        header("Location: control/control-created.php");
+        header("Location: control-created.php");
     }
 }
 ?>
