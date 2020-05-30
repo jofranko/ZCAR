@@ -9,7 +9,7 @@ if(isset($_POST['c_u']) && !empty($_POST['c_u_id']) && !empty($_POST['c_u_data']
     $column_users = $_POST['c_u_column_users'];
     $data = $_POST['c_u_data'];
     if ($table == 'book') {
-        if ($column_book == 'date') {
+        if ($column_book == 'bookdate') {
             $query = "UPDATE book SET bookdate = '$data' WHERE id = '$id'";      
             $result = mysqli_query($conn,$query);
             header("Location: crud.php");   
