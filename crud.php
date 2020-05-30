@@ -52,10 +52,11 @@
               <!-- UPDATE -->
               <h1><a class="text-black">Update</a></h1>
               <!-- update book -->
-
+              <a href="crud-update-book.php" class="btn btn-warning btn-lg text-white">Book</a>
               <!-- update users -->
-
+              <a href="crud-update-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br> 
             </div>
+            
             <div class=col-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
@@ -63,6 +64,7 @@
               <a href="crud-read-book.php" class="btn btn-warning btn-lg text-white">Book</a>
               <!-- read users -->
               <a href="crud-read-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br>
+
               <!-- DELETE -->
               <h1><a class="text-black">Delete</a></h1>
               <form action="crud-delete.php" method="POST">

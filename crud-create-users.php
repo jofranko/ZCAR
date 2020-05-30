@@ -43,7 +43,7 @@
           <div class=row>
             <div class=col-md-4></div>
             <div class=col-md-4>
-              <form action="crud-create-users.php" method="POST">
+              <form action="crud-create-users2.php" method="POST">
                 <input type="text" class="form-control" name="s_first_name" placeholder="First name"><br>
                 <input type="text" class="form-control" name="s_last_name" placeholder="Last name"><br>
                 <input type="text" class="form-control" name="s_email" placeholder="Email"><br>
