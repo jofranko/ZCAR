@@ -97,10 +97,6 @@
             <div class=col-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
-              <!-- read book -->
-              <a href="crud-read-book.php" class="btn btn-warning btn-lg text-white">Book</a>
-              <!-- read users -->
-              <a href="crud-read-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br>
 
               <!-- DELETE -->
               <h1><a class="text-black">Delete</a></h1>
