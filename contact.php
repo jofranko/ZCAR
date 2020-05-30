@@ -40,7 +40,7 @@
           <p>
             Do you have any questions about our service?
           </p>
-          <form action="" method="POST">
+          <form action="contact-email.php" method="POST">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <i class="fas fa-user input-group-text"></i>

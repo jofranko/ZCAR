@@ -2,13 +2,11 @@
 
 if(isset($_POST['email'] && !empty($_POST['c_name']) && !empty($_POST['c_email']) && !empty($_POST['c_message'])) {
     $to = "jofranko@uninorte.edu.co";
-    $header = "From:".$_POST['c_email'];
-    $subject = $_POST['c_name'];
+    $subject = $_POST['c_email'];
     $message = $_POST['c_message'];
-    mail($to,$subject,$message,$header);
+    mail($to,$subject,$message);
     header("Location: contact.html");
 }else{
-        header("Location: control-error.html");
-    
+        header("Location: control-error.html");    
 }
 ?>
