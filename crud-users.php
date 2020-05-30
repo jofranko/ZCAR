@@ -44,52 +44,49 @@
                     <?php
                     // Include config file
                     require_once "db.php";
-                    $admin = $_SESSION['loguser']; 
-                    if($admin =='admin') {
-                        // Attempt select query execution
-                        $sql = "SELECT * FROM users";
-                        if($result = mysqli_query($conn, $sql)){
-                            if(mysqli_num_rows($result) > 0){
-                                echo "<table class='table table-bordered table-striped'>";
-                                    echo "<thead>";
-                                        echo "<tr>";
-                                            echo "<th>First name</th>";
-                                            echo "<th>Last name</th>";                    
-                                            echo "<th>Email</th>";
-                                            echo "<th>Username</th>";
-                                            echo "<th>Password</th>";
-                                            echo "<th>Identification</th>";
-                                            echo "<th>Card name</th>";
-                                            echo "<th>Card number</th>";
-                                            echo "<th>Card expiry date</th>";
-                                            echo "<th>Card CVV</th>";
-                                        echo "</tr>";
-                                    echo "</thead>";
-                                    echo "<tbody>";
-                                    while($row = mysqli_fetch_array($result)){
-                                        echo "<tr>";
-                                            echo "<td>" . $row['first_name'] . "</td>";
-                                            echo "<td>" . $row['last_name'] . "</td>";
-                                            echo "<td>" . $row['email'] . "</td>";
-                                            echo "<td>" . $row['username'] . "</td>";
-                                            echo "<td>" . $row['password'] . "</td>";
-                                            echo "<td>" . $row['identification'] . "</td>";
-                                            echo "<td>" . $row['card_name'] . "</td>";
-                                            echo "<td>" . $row['card_number'] . "</td>";
-                                            echo "<td>" . $row['card_expiry_date'] . "</td>";
-                                            echo "<td>" . $row['card_cvv'] . "</td>";
-                                        echo "</tr>";
-                                    }
-                                    echo "</tbody>";                            
-                                echo "</table>";
-                                // Free result set
-                                mysqli_free_result($result);
-                            } else{
-                                echo "<p class='lead'><em>No records were found.</em></p>";
-                            }
+                    // Attempt select query execution
+                    $sql = "SELECT * FROM users";
+                    if($result = mysqli_query($conn, $sql)){
+                        if(mysqli_num_rows($result) > 0){
+                            echo "<table class='table table-bordered table-striped'>";
+                                echo "<thead>";
+                                    echo "<tr>";
+                                        echo "<th>First name</th>";
+                                        echo "<th>Last name</th>";                    
+                                        echo "<th>Email</th>";
+                                        echo "<th>Username</th>";
+                                        echo "<th>Password</th>";
+                                        echo "<th>Identification</th>";
+                                        echo "<th>Card name</th>";
+                                        echo "<th>Card number</th>";
+                                        echo "<th>Card expiry date</th>";
+                                        echo "<th>Card CVV</th>";
+                                    echo "</tr>";
+                                echo "</thead>";
+                                echo "<tbody>";
+                                while($row = mysqli_fetch_array($result)){
+                                    echo "<tr>";
+                                        echo "<td>" . $row['first_name'] . "</td>";
+                                        echo "<td>" . $row['last_name'] . "</td>";
+                                        echo "<td>" . $row['email'] . "</td>";
+                                        echo "<td>" . $row['username'] . "</td>";
+                                        echo "<td>" . $row['password'] . "</td>";
+                                        echo "<td>" . $row['identification'] . "</td>";
+                                        echo "<td>" . $row['card_name'] . "</td>";
+                                        echo "<td>" . $row['card_number'] . "</td>";
+                                        echo "<td>" . $row['card_expiry_date'] . "</td>";
+                                        echo "<td>" . $row['card_cvv'] . "</td>";
+                                    echo "</tr>";
+                                }
+                                echo "</tbody>";                            
+                            echo "</table>";
+                            // Free result set
+                            mysqli_free_result($result);
                         } else{
-                            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+                            echo "<p class='lead'><em>No records were found.</em></p>";
                         }
+                    } else{
+                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
                     }
                     // Close connection
                     mysqli_close($conn);
