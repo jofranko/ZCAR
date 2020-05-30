@@ -37,7 +37,15 @@
     <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
-          <h1><a class="text-warning"><?php echo $_SESSION["control"]; ?></a></h1>
+          <?php if($_SESSION["control"]==1){?>
+          <h1><a class="text-warning">Current USERNAME is already used</a></h1>
+          <?php }elseif($_SESSION["control"]==2){?>
+          <h1><a class="text-warning">Current EMAIL is already used</a></h1>
+          <?php }elseif($_SESSION["control"]==3){?>
+          <h1><a class="text-warning">Account created successfully</a></h1>
+          <?php }elseif($_SESSION["control"]==4){?>
+          <h1><a class="text-warning">There was a problem logging in, please verify your username and password</a></h1>
+          <?php }?>
         </div>
       </div>
     </section>
