@@ -11,10 +11,8 @@ if(isset($_POST['user_log'])){
     if(mysqli_num_rows($result) > 0){
         $_SESSION['logwell']=true;
         $_SESSION['loguser']=$username;
-    } else{
-        $_SESSION['logwell']=false;
     }
-    header("Location: book.php");
+    header("Location: index.php");    
 }
 
 ?>
