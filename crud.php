@@ -45,6 +45,7 @@
             <div class=col-4>
               <h1><a class="text-black">Create</a></h1>
               <!-- create book -->
+              <h3><a class="text-black">Create book</a></h3>
               <form action="crud-create-book.php" method="POST">
                 <input type="text" class="form-control"  name="c_c_b_user" placeholder="User"><br>
                 <input type="text" class="form-control"  name="c_c_b_date" placeholder="Date (dd-mm-yyyy)"><br>
@@ -55,9 +56,10 @@
                   </select>
                 </div>
                 <input type="text" class="form-control"  name="c_c_b_quantity" placeholder="Quantity"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_b" value="Create book">
+                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_b" value="Create book"><br>
               </form>
               <!-- create users -->
+              <h3><a class="text-black">Create users</a></h3>
               <form action="crud-create-users.php" method="POST">
                 <input type="text" class="form-control" name="c_c_u_first_name" placeholder="First name"><br>
                 <input type="text" class="form-control" name="c_c_u_last_name" placeholder="Last name"><br>
@@ -69,7 +71,7 @@
                 <input type="text" class="form-control" name="c_c_u_card_number" placeholder="Card number">
                 <input type="text" class="form-control" name="c_c_u_card_expiry_date" placeholder="Card expiry date">
                 <input type="text" class="form-control" name="c_c_u_card_cvv" placeholder="Card CVV"><br>
-                <input type="submit" class="btn btn-warning btn-sm text-white" name="c_c_u" value="Create sers">
+                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_c_u" value="Create users">
               </form>
             </div>
             <!-- UPDATE -->
