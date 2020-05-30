@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <br><h2 class="pull-left">Users Details</h2>
+                        <br><h2 class="pull-left">CRUD USERS</h2>
                     </div>
                     <?php
                     // Include config file
@@ -56,8 +56,12 @@
                                         echo "<th>Last name</th>";                    
                                         echo "<th>Email</th>";
                                         echo "<th>Username</th>";
+                                        echo "<th>Password</th>";
                                         echo "<th>Identification</th>";
                                         echo "<th>Card name</th>";
+                                        echo "<th>Card number</th>";
+                                        echo "<th>Card expiry date</th>";
+                                        echo "<th>Card CVV</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -67,8 +71,12 @@
                                         echo "<td>" . $row['last_name'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";
                                         echo "<td>" . $row['username'] . "</td>";
+                                        echo "<td>" . $row['password'] . "</td>";
                                         echo "<td>" . $row['identification'] . "</td>";
                                         echo "<td>" . $row['card_name'] . "</td>";
+                                        echo "<td>" . $row['card_number'] . "</td>";
+                                        echo "<td>" . $row['card_expiry_date'] . "</td>";
+                                        echo "<td>" . $row['card_cvv'] . "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            

@@ -29,6 +29,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
+            <?php if($_SESSION['loguser']=='admin') { ?>
+              <li class="nav-item ">
+                <a class="nav-link btn btn-outline-warning btn-sm" href="crud-book.php">CRUD BOOK</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link btn btn-outline-warning btn-sm" href="crud-users.php">CRUD USERS</a>
+              </li>
+            <?php } ?>
             <?php if($_SESSION['logwell']==true) { ?>
               <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="book.php">Book</a>
