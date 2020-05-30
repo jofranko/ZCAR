@@ -14,20 +14,21 @@ if(isset($_POST['user_sign'])){
     $card_expiry_date= $_POST['s_card_expiry_date'];
     $card_cvv= $_POST['card_cvv'];
     
-    $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
-    $result=mysqli_query($conn,$query);
-    if (!$result){
-        $repetido1= "SELECT * FROM users WHERE username='$username'";
-        $abr1=mysqli_query($conn,$repetido1);
-        $repetido2= "SELECT * FROM users WHERE email='$email'";
-        $abr2=mysqli_query($conn,$repetido2);
-        if($abr1){
-            $_SESSION['user_rep'] = 'Current username is used';
-        }
-        if($abr2){
-            $_SESSION['email_rep'] = 'Current email is used';
-        }
+    $test = "SELECT * FROM users WHERE username='$username'";
+    $test_result = mysqli_query($conn,$test);
+    $test2 = "SELECT * FROM users WHERE email='$email'";
+    $test_result2 = mysqli_query($conn,$test2);
+    if(mysqli_num_rows($test_result) > 0){
+        $_SESSION["control"]='Current username is already used';
+        header("Location: control.php");
+    } elseif (mysqli_num_rows($test_result2) > 0) {
+        $_SESSION["control"]='Current username is already used';
+        header("Location: control.php");
+    }else{
+        $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
+        $result=mysqli_query($conn,$query);
+        $_SESSION["control"]='Account created successfully';
+        header("Location: control.php");
     }
-    header("Location: index.php");
 }
 ?>
