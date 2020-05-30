@@ -54,8 +54,8 @@
               <h1><a class="text-warning">Update</a></h1>
 
             </div>
-              <h1><a class="text-warning">Delete</a></h1>
             <div class=col-3>
+              <h1><a class="text-warning">Delete</a></h1>
               <form action="crud-element-delete.php" method="POST">
                 <div class="form-group">
                   <select class="form-control" name="c_d_table" id="exampleFormControlSelect">
