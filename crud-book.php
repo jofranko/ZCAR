@@ -34,7 +34,8 @@
       </div>
     </nav>
     <!-- CRUD -->
-    <?php $admin = $_SESSION['loguser']; if($admin =='admin') { ?>
+    <?php $admin = $_SESSION['loguser']; 
+    if($admin =='admin') { ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
