@@ -7,10 +7,10 @@ if(isset($_POST['booking'])){
     $username = $_SESSION['loguser'];
     $booktime= $_POST['b_time'];
     $quantity= $_POST['b_quantity'];
-    if ($time=='Hours') {
+    if ($booktime=='Hours') {
         $total=$quantity*5;
     }
-    if ($time=='Days') {
+    if ($booktime=='Days') {
         $total=$quantity*100;
     }
     $query = "INSERT INTO book (bookdate,username,booktime,quantity,total) VALUES ('$bookdate','$username','$booktime','$quantity','$total')";
