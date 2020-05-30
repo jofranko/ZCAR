@@ -51,6 +51,7 @@
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
                                     echo "<tr>";
+                                        echo "<th>Id</th>";
                                         echo "<th>First name</th>";
                                         echo "<th>Last name</th>";                    
                                         echo "<th>Email</th>";
@@ -66,6 +67,7 @@
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
+                                        echo "<td>" . $row['id'] . "</td>";
                                         echo "<td>" . $row['first_name'] . "</td>";
                                         echo "<td>" . $row['last_name'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";

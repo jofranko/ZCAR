@@ -23,7 +23,7 @@ if(isset($_POST['user_sign']) && !empty($_POST['s_first_name']) && !empty($_POST
     } elseif (mysqli_num_rows($test_result2) > 0) {
         header("Location: control-email.php");
     }else{
-        $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
+        $query = "INSERT INTO users (id,first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES (NULL,'$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
         $result = mysqli_query($conn,$query);
         header("Location: control-created.php");
     }

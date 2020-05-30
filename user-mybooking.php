@@ -54,6 +54,7 @@
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
                                     echo "<tr>";
+                                        echo "<th>Id</th>";
                                         echo "<th>Date</th>";
                                         echo "<th>Time</th>";                    
                                         echo "<th>Quantity</th>";
@@ -63,6 +64,7 @@
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
+                                        echo "<td>" . $row['id'] . "</td>";
                                         echo "<td>" . $row['bookdate'] . "</td>";
                                         echo "<td>" . $row['booktime'] . "</td>";
                                         echo "<td>" . $row['quantity'] . "</td>";
