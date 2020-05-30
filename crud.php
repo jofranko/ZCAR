@@ -41,7 +41,7 @@
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">CRUD</a></h1>
           <div class=row>
-            <div class=col-sm-6>
+            <div class=col-lg-6>
               <!-- CREATE -->
               <h1><a class="text-black">Create</a></h1>
               <!-- create book -->
@@ -61,7 +61,7 @@
                 </div>
                 <input type="text" class="form-control"  name="c_u_id" placeholder="Id"><br>
                 <div class="row">
-                  <div class="col-sm-6 col-lg-3">
+                  <div class="col-lg-6">
                     <div class="form-group">
                       <select class="form-control" name="c_u_column_book" id="exampleFormControlSelect1">
                         <option>Book column...</option>
@@ -73,7 +73,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-lg-3">
+                  <div class="col-lg-6">
                     <div class="form-group">
                       <select class="form-control" name="c_u_column_users" id="exampleFormControlSelect2">
                         <option>Users column...</option>
@@ -96,7 +96,7 @@
               </form>
             </div>
             
-            <div class=col-sm-6>
+            <div class=col-lg-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
               <!-- read book -->
