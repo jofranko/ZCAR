@@ -48,7 +48,7 @@
                     require_once "db.php";
                     
                     // Attempt select query execution
-                    $sql = "SELECT * FROM book ";
+                    $sql = "SELECT * FROM book WHERE username='$_SESSION['loguser']'";
                     if($result = mysqli_query($conn, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo "<table class='table table-bordered table-striped'>";

@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Users Details</h2>
+                        <br><h2 class="pull-left">Users Details</h2>
                     </div>
                     <?php
                     // Include config file

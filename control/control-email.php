@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- DATABASE -->
-<?php include('db.php') ?>
+
 <head>
 	<meta charset="UTF-8">
 	<title>ZCAR</title>
@@ -16,8 +15,7 @@
 	<link rel="icon" href="img/logo.ico">
 </head>
 <body>
-
-    <!-- NAVIGATION -->
+	<!-- NAVIGATION -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container">
         <a class="navbar-brand" href="/">
@@ -35,34 +33,16 @@
         </div>
       </div>
     </nav>
-
+    <!-- CONTROL -->
     <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
-          <h1><a class="text-warning">Book a car</a></h1>
-          <p>In Zipcar you can reserve cars with a costs of $5 per hour or $100 per day. Gas, insurance, and 180 miles per day are all included in membership.</p>
-          <h4>User: <?php echo $_SESSION["loguser"]; ?> </h4>
-          <h4>Date: <?php $thedate=date("d-m-Y"); echo $thedate ?> </h4>
-          <div class=row>
-            <div class=col-md-4></div>
-            <div class=col-md-4>
-              <form action="booking.php" method="POST">
-                <input type="text" class="form-control"  name="b_time" placeholder="Hours or Days"><br>
-                <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
-              </form>
-            </div>
-          </div>
+          <h1><a class="text-warning">Current EMAIL is already used</a></h1>
         </div>
       </div>
     </section>
-    <section class="bg-white text-black">
-      <div class=form-group>
-        
-      </div>
-    </section>
 
-    <!-- FOOTER -->
+	<!-- FOOTER -->
     <footer>
       <div class="container p-3">
         <div class="row text-center text-black">
@@ -72,7 +52,6 @@
         </div>
       </div>       
     </footer>
-
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
