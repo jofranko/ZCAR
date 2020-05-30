@@ -37,7 +37,7 @@
     </nav>
 
     <section class="bg-white text-black">
-      <div class="section">
+      <div class="section col-xs-4 form-group row">
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">Book a car</a></h1>
           <p>In Zipcar you can reserve cars with a costs of $5 per hour or $100 per day. Gas, insurance, and 180 miles per day are all included in membership.</p>
