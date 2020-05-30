@@ -34,6 +34,9 @@
                 <a class="nav-link btn btn-outline-warning btn-sm" href="book.php">Book</a>
               </li>
               <li class="nav-item ">
+                <a class="nav-link btn btn-outline-warning btn-sm" href="user-mybooking.php">My Booking</a>
+              </li>
+              <li class="nav-item ">
                 <a class="nav-link btn btn-outline-warning btn-sm" href="user-logout.php">Logout</a>
               </li>
             <?php } else{ ?>
