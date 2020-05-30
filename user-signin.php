@@ -28,7 +28,7 @@ if(isset($_POST['user_sign'])){
         header("Location: control.php");
     }else{
         $query = "INSERT INTO users (first_name,last_name,email,username,password,identification,card_name,card_number,card_expiry_date,card_cvv) VALUES ('$first_name','$last_name','$email','$username','$password','$identification','$card_name','$card_number','$card_expiry_date','$card_cvv')";
-        mysqli_query($conn,$query);
+        $result = mysqli_query($conn,$query);
         $_SESSION["control"]='Account created successfully';
         header("Location: control.php");
     }
