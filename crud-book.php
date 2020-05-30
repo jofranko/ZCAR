@@ -62,7 +62,7 @@
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
-                                        echo "<td>" . $row['bookdate'] . "</td>";
+                                        echo "<td>" . $row['id'] . "</td>";
                                         echo "<td>" . $row['bookdate'] . "</td>";
                                         echo "<td>" . $row['username'] . "</td>";
                                         echo "<td>" . $row['booktime'] . "</td>";
