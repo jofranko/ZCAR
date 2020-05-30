@@ -5,8 +5,8 @@ include('db.php');
 if(isset($_POST['c_u']) && !empty($_POST['c_u_id']) && !empty($_POST['c_u_data'])){
     $table = $_POST['c_u_table'];
     $id = $_POST['c_u_id'];
-    $column_book = $_POST['c_u_column_book'];
-    $column_users = $_POST['c_u_column_users'];
+    $column_book = $_POST['c_u_book'];
+    $column_users = $_POST['c_u_users'];
     $data = $_POST['c_u_data'];
     if ($table == 'book') {
         if ($column_book == 'bookdate') {
@@ -31,7 +31,7 @@ if(isset($_POST['c_u']) && !empty($_POST['c_u_id']) && !empty($_POST['c_u_data']
             header("Location: crud.php");   
         }else{
             header("Location: control-error.php");
-        }book
+        }
     }elseif ($table == 'users') {
         if ($column_users == 'first_name') {
             $query = "UPDATE users SET first_name = '$data' WHERE id = '$id'";      

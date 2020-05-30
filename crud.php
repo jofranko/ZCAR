@@ -64,7 +64,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <select class="form-control" name="c_u_column_book" id="exampleFormControlSelect1">
+                      <select class="form-control" name="c_u_book" id="exampleFormControlSelect1">
                         <option>Book column...</option>
                         <option>bookdate</option>
                         <option>username</option>
@@ -76,7 +76,7 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <select class="form-control" name="c_u_column_users" id="exampleFormControlSelect2">
+                      <select class="form-control" name="c_u_users" id="exampleFormControlSelect2">
                         <option>Users column...</option>
                         <option>first_name</option>
                         <option>last_name</option>
