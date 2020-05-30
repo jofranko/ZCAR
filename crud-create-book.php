@@ -39,7 +39,7 @@
     <section class="bg-white text-black">
       <div class="section">
         <div class="text-center justify-content-center align-self-center">
-          <h1><a class="text-warning">Create user</a></h1>
+          <h1><a class="text-warning">Create book</a></h1>
           <div class=row>
             <div class=col-md-4></div>
             <div class=col-md-4>

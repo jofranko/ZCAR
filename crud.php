@@ -51,6 +51,43 @@
 
               <!-- UPDATE -->
               <h1><a class="text-black">Update</a></h1>
+              <form action="crud-update.php" method="POST">
+                <div class="form-group">
+                  <select class="form-control" name="c_u_table" id="exampleFormControlSelect3">
+                    <option>Table...</option>
+                    <option>book</option>
+                    <option>users</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control"  name="c_u_id" placeholder="Id"><br>
+                <div class="form-group">
+                  <select class="form-control" name="c_u_column_book" id="exampleFormControlSelect3">
+                    <option>Table...</option>
+                    <option>bookdate</option>
+                    <option>username</option>
+                    <option>booktime</option>
+                    <option>quantity</option>
+                    <option>total</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="c_u_column_users" id="exampleFormControlSelect3">
+                    <option>Table...</option>
+                    <option>first_name</option>
+                    <option>last_name</option>
+                    <option>email</option>
+                    <option>username</option>
+                    <option>password</option>
+                    <option>identification</option>
+                    <option>card_name</option>
+                    <option>card_number</option>
+                    <option>card_expiry_date</option>
+                    <option>card_cvv</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control"  name="c_u_data" placeholder="Data"><br>
+                <input type="submit" class="btn btn-warning btn-lg text-white" name="c_u" value="Update">
+              </form>
               <!-- update book -->
               <a href="crud-update-book.php" class="btn btn-warning btn-lg text-white">Book</a>
               <!-- update users -->
