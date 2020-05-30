@@ -47,7 +47,14 @@
             <div class=col-md-4></div>
             <div class=col-md-4>
               <form action="booking.php" method="POST">
-                <input type="text" class="form-control"  name="b_time" placeholder="Hours or Days"><br>
+                <!-- <input type="text" class="form-control"  name="b_time" placeholder="Hours or Days"><br> -->
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" name="b_time" id="exampleFormControlSelect1">
+                    <option>Hours</option>
+                    <option>Days</option>
+                  </select>
+                </div>
                 <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
               </form>

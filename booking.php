@@ -7,9 +7,11 @@ if(isset($_POST['booking']) && !empty($_POST['b_time']) && !empty($_POST['b_quan
     $username = $_SESSION['loguser'];
     $booktime= $_POST['b_time'];
     $quantity= $_POST['b_quantity'];
-    if ($booktime=='Hours' || $booktime=='hours') {
+    if ($booktime=='Hours' || $booktime=='hours' || $booktime=='hour') {
+        $booktime='Hours';
         $total=$quantity*5;
-    }elseif ($booktime=='Days' || $booktime=='days') {
+    }elseif ($booktime=='Days' || $booktime=='days' || $booktime=='day') {
+        $booktime='Days';
         $total=$quantity*100;
     }else{
         $booktime='Hours';
