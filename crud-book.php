@@ -42,46 +42,48 @@
                         <br><h2 class="pull-left">CRUD BOOK</h2>
                     </div>
                     <?php
-                    // Include config file
-                    require_once "db.php";
-                    // Attempt select query execution
-                    $sql = "SELECT * FROM book";
                     $admin = $_SESSION['loguser']; 
                     if($admin =='admin') { 
-                    if($result = mysqli_query($conn, $sql)){
-                        if(mysqli_num_rows($result) > 0){
-                            echo "<table class='table table-bordered table-striped'>";
-                                echo "<thead>";
-                                    echo "<tr>";
-                                        echo "<th>Date</th>";
-                                        echo "<th>Username</th>";                    
-                                        echo "<th>Time</th>";
-                                        echo "<th>Quantity</th>";
-                                        echo "<th>Total</th>";
-                                    echo "</tr>";
-                                echo "</thead>";
-                                echo "<tbody>";
-                                while($row = mysqli_fetch_array($result)){
-                                    echo "<tr>";
-                                        echo "<td>" . $row['bookdate'] . "</td>";
-                                        echo "<td>" . $row['username'] . "</td>";
-                                        echo "<td>" . $row['booktime'] . "</td>";
-                                        echo "<td>" . $row['quantity'] . "</td>";
-                                        echo "<td>" . $row['total'] . "</td>";
-                                    echo "</tr>";
-                                }
-                                echo "</tbody>";                            
-                            echo "</table>";
-                            // Free result set
-                            mysqli_free_result($result);
+                        // Include config file
+                        require_once "db.php";
+                        // Attempt select query execution
+                        $sql = "SELECT * FROM book";                    
+                        if($result = mysqli_query($conn, $sql)){
+                            if(mysqli_num_rows($result) > 0){
+                                echo "<table class='table table-bordered table-striped'>";
+                                    echo "<thead>";
+                                        echo "<tr>";
+                                            echo "<th>Date</th>";
+                                            echo "<th>Username</th>";                    
+                                            echo "<th>Time</th>";
+                                            echo "<th>Quantity</th>";
+                                            echo "<th>Total</th>";
+                                        echo "</tr>";
+                                    echo "</thead>";
+                                    echo "<tbody>";
+                                    while($row = mysqli_fetch_array($result)){
+                                        echo "<tr>";
+                                            echo "<td>" . $row['bookdate'] . "</td>";
+                                            echo "<td>" . $row['username'] . "</td>";
+                                            echo "<td>" . $row['booktime'] . "</td>";
+                                            echo "<td>" . $row['quantity'] . "</td>";
+                                            echo "<td>" . $row['total'] . "</td>";
+                                        echo "</tr>";
+                                    }
+                                    echo "</tbody>";                            
+                                echo "</table>";
+                                // Free result set
+                                mysqli_free_result($result);
+                            } else{
+                                echo "<p class='lead'><em>No records were found.</em></p>";
+                            }
                         } else{
-                            echo "<p class='lead'><em>No records were found.</em></p>";
+                            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
                         }
-                    } else{
-                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-                    }}
-                    // Close connection
-                    mysqli_close($conn);
+                        
+                        // Close connection
+                        mysqli_close($conn);
+                    }
                     ?>
                 </div>
             </div>        
