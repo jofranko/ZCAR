@@ -95,7 +95,6 @@
             </div>        
         </div>
     </div>
-    <?php } ?>
 	<!-- FOOTER -->
     <footer>
       <div class="container p-3">
