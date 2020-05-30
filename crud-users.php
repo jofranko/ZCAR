@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link btn btn-outline-warning btn-sm" href="/">Go back</a>
+              <a class="nav-link btn btn-outline-warning btn-sm" href="crud.php">Go back</a>
             </li>
           </ul>
         </div>
