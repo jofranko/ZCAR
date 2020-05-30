@@ -48,7 +48,7 @@
             <div class=col-md-4>
               <form action="booking.php" method="POST">
                 <div class="form-group">
-                  <select class="form-control" name="b_time" id="exampleFormControlSelect1">
+                  <select class="form-control" name="b_time" id="exampleFormControlSelect">
                     <option>Hours</option>
                     <option>Days</option>
                   </select>
