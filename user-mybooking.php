@@ -63,8 +63,8 @@
                                 echo "<tbody>";
                                 while($row = mysqli_fetch_array($result)){
                                     echo "<tr>";
-                                        echo "<td>" . $row['date'] . "</td>";
-                                        echo "<td>" . $row['time'] . "</td>";
+                                        echo "<td>" . $row['bookdate'] . "</td>";
+                                        echo "<td>" . $row['booktime'] . "</td>";
                                         echo "<td>" . $row['quantity'] . "</td>";
                                         echo "<td>" . $row['total'] . "</td>";
                                     echo "</tr>";
