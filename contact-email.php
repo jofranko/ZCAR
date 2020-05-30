@@ -7,6 +7,6 @@ if(isset($_POST['email'] && !empty($_POST['c_name']) && !empty($_POST['c_email']
     mail($to,$subject,$message);
     header("Location: contact.html");
 }else{
-        header("Location: control-error.html");    
+    header("Location: control-error.html");    
 }
 ?>

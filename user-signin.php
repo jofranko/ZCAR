@@ -2,7 +2,7 @@
 
 include('db.php');
 
-if(isset($_POST['user_sign'])){
+if(isset($_POST['user_sign']) && !empty($_POST['s_first_name']) && !empty($_POST['s_last_name']) && !empty($_POST['s_email']) && !empty($_POST['s_username']) && !empty($_POST['s_password']) && !empty($_POST['s_identification']) && !empty($_POST['s_card_name']) && !empty($_POST['s_card_number']) && !empty($_POST['s_card_expiry_date']) && !empty($_POST['s_card_cvv'])){
     $first_name= $_POST['s_first_name'];
     $last_name= $_POST['s_last_name'];
     $email= $_POST['s_email'];
@@ -27,5 +27,7 @@ if(isset($_POST['user_sign'])){
         $result = mysqli_query($conn,$query);
         header("Location: control-created.php");
     }
+}else{
+    header("Location: control-error.php");
 }
 ?>

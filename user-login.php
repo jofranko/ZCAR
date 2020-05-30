@@ -2,7 +2,7 @@
 
 include('db.php');
 
-if(isset($_POST['user_log'])){
+if(isset($_POST['user_log']) && !empty($_POST['l_username']) && !empty($_POST['l_password'])){
     $username= $_POST['l_username'];
     $password= $_POST['l_password'];
 
@@ -15,5 +15,7 @@ if(isset($_POST['user_log'])){
     }else{
     	header("Location: control-login.php");
     }
+}else{
+    header("Location: control-login.php");
 }
 ?>
