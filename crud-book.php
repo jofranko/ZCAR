@@ -34,6 +34,7 @@
       </div>
     </nav>
     <!-- CRUD -->
+    <?php $admin = $_SESSION['loguser']; if($admin =='admin') { ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -87,7 +88,7 @@
             </div>        
         </div>
     </div>
-
+    <?php } ?>
 	<!-- FOOTER -->
     <footer>
       <div class="container p-3">
