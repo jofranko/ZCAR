@@ -88,15 +88,15 @@
                 <input type="text" class="form-control"  name="c_u_data" placeholder="Data"><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="c_u" value="Update">
               </form>
-              <!-- update book -->
-              <a href="crud-update-book.php" class="btn btn-warning btn-lg text-white">Book</a>
-              <!-- update users -->
-              <a href="crud-update-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br> 
             </div>
             
             <div class=col-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
+              <!-- read book -->
+              <a href="crud-read-book.php" class="btn btn-warning btn-lg text-white">Book</a>
+              <!-- read users -->
+              <a href="crud-read-users.php" class="btn btn-warning btn-lg text-white">Users</a><br><br>
 
               <!-- DELETE -->
               <h1><a class="text-black">Delete</a></h1>
