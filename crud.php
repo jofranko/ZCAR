@@ -41,6 +41,7 @@
         <div class="text-center justify-content-center align-self-center">
           <h1><a class="text-warning">CRUD</a></h1>
           <div class=row>
+            <!-- CREATE & UPDATE-->
             <div class=col-lg-6>
               <!-- CREATE -->
               <h1><a class="text-black">Create</a></h1>
@@ -95,7 +96,7 @@
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="c_u" value="Update">
               </form>
             </div>
-            
+            <!-- READ & DELETE-->
             <div class=col-lg-6>
               <!-- READ -->
               <h1><a class="text-black">Read</a></h1>
