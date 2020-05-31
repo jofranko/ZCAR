@@ -57,7 +57,7 @@
                   <option>Waiting</option>
                   <option>Taken</option>
                   <option>Returned</option>
-                </select>
+                </select><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
               </form>
             </div>
