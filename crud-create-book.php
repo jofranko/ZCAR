@@ -50,7 +50,7 @@
                   <select class="form-control" name="b_time" id="exampleFormControlSelect">
                     <option>Hours</option>
                     <option>Days</option>
-                  </select>
+                  </select><br>
                   <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
                   <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
                 </div>                
