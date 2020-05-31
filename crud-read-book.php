@@ -109,7 +109,7 @@
                   <option>Waiting</option>
                   <option>Taken</option>
                   <option>Returned</option>
-                </select>
+                </select><br>
                 <input type="submit" class="btn btn-warning btn-sm text-white" name="status" value="Update">
               </form>
             </div>
