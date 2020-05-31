@@ -51,9 +51,9 @@
                     <option>Hours</option>
                     <option>Days</option>
                   </select>
-                </div>
-                <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
-                <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
+                  <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
+                  <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
+                </div>                
               </form>
             </div>
           </div>
