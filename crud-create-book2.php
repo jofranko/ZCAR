@@ -12,7 +12,7 @@ if(isset($_POST['booking']) && !empty($_POST['b_date']) && !empty($_POST['b_user
     }elseif ($booktime == 'Days') {
         $total = $quantity*100;
     }
-    $status = $_POST['b_status'];
+    $status = 'Waiting';
     $query = "INSERT INTO book (id,bookdate,username,booktime,quantity,total,status) VALUES (NULL,'$bookdate','$username','$booktime','$quantity','$total','$status')";
     $result = mysqli_query($conn,$query);
     header("Location: crud-create-book.php");

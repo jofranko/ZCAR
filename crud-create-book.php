@@ -53,11 +53,6 @@
                   </select>
                 </div>
                 <input type="text" class="form-control"  name="b_quantity" placeholder="Quantity"><br>
-                <select class="form-control" name="b_status" id="exampleFormControlSelect">
-                  <option>Waiting</option>
-                  <option>Taken</option>
-                  <option>Returned</option>
-                </select><br>
                 <input type="submit" class="btn btn-warning btn-lg text-white" name="booking" value="Book">
               </form>
             </div>
