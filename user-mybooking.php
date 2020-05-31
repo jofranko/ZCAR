@@ -59,6 +59,7 @@
                                         echo "<th>Time</th>";                    
                                         echo "<th>Quantity</th>";
                                         echo "<th>Total ($)</th>";
+                                        echo "<th>Status</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -69,6 +70,7 @@
                                         echo "<td>" . $row['booktime'] . "</td>";
                                         echo "<td>" . $row['quantity'] . "</td>";
                                         echo "<td>" . $row['total'] . "</td>";
+                                        echo "<td>" . $row['status'] . "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            

@@ -40,6 +40,7 @@
                 <div class="col-md-12">
                     <div class="page-header clearfix">
                         <br><h2 class="pull-left">READ BOOK</h2>
+                        <a class="nav-link btn btn-outline-warning btn-sm"  data-toggle="modal" data-target="#modalStatus" href="#">Update status</a>
                     </div>
                     <?php
                     // Include config file
@@ -56,7 +57,8 @@
                                         echo "<th>Username</th>";                    
                                         echo "<th>Time</th>";
                                         echo "<th>Quantity</th>";
-                                        echo "<th>Total</th>";
+                                        echo "<th>Total ($)</th>";
+                                        echo "<th>Status</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";
@@ -68,6 +70,7 @@
                                         echo "<td>" . $row['booktime'] . "</td>";
                                         echo "<td>" . $row['quantity'] . "</td>";
                                         echo "<td>" . $row['total'] . "</td>";
+                                        echo "<td>" . $row['status'] . "</td>";
                                     echo "</tr>";
                                 }
                                 echo "</tbody>";                            
@@ -87,6 +90,34 @@
             </div>        
         </div>
     </div>
+
+    <!-- MODAL STATUS -->
+    <div class="modal fade" id="modalStatus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Status</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center justify-content-center align-self-center">
+              <form action="crud-update-status.php" method="POST">
+                <input type="text" class="form-control"  name="c_u_s_id" placeholder="Id"><br>
+                <select class="form-control" name="c_u_s_status" id="exampleFormControlSelect">
+                  <option>Waiting</option>
+                  <option>Taken</option>
+                  <option>Returned</option>
+                </select>
+                <input type="submit" class="btn btn-warning btn-sm text-white" name="status" value="Update">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 	<!-- FOOTER -->
     <footer>
       <div class="container p-3">

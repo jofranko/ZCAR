@@ -12,7 +12,8 @@ if(isset($_POST['booking']) && !empty($_POST['b_quantity'])){
     }elseif ($booktime == 'Days') {
         $total = $quantity*100;
     }
-    $query = "INSERT INTO book (id,bookdate,username,booktime,quantity,total) VALUES (NULL,'$bookdate','$username','$booktime','$quantity','$total')";
+    $status = 'Waiting';
+    $query = "INSERT INTO book (id,bookdate,username,booktime,quantity,total,status) VALUES (NULL,'$bookdate','$username','$booktime','$quantity','$total','$status')";
     $result = mysqli_query($conn,$query);
     header("Location: index.php");
 }else{
