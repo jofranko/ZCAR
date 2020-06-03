@@ -227,7 +227,7 @@
                <div class="card-body">
                  <h3>How do I join Zipcar?</h3>
                  <p>
-                   Apply online. Once approved, get your Zipcard by mail in 3-7 days. That’s your key to access cars in our network. Once you activate your Zipcard, you can begin booking Zipcars. 
+                   Apply online. Once approved, you can get your ZCAR. That’s your key to access cars in our network. 
                  </p>
                </div>
              </div>
@@ -237,7 +237,7 @@
                <div class="card-body">
                  <h3>How soon can I drive with Zipcar?</h3>
                  <p>
-                   First, sign up for membership. Once approved, get your Zipcard by mail in 3-7 days. Activate your Zipcard, and then you can book reservations.
+                   First, sign up for membership. Once approved, get your ZCAR by booking.
                  </p>
                </div>
              </div>
@@ -247,7 +247,7 @@
                <div class="card-body">
                  <h3>How much does Zipcar cost?</h3>
                  <p>
-                   In Zipcar you can reserve cars with a costs of $5 per hour or $100 per day. Gas, insurance, and 180 miles per day are all included in membership.
+                   In ZCAR you can reserve cars with a costs of $5 per hour or $100 per day. Gas and insurance are included.
                  </p>
                </div>
              </div>
